@@ -1,0 +1,70 @@
+/*CSS Desarrollado por Juan Sebastian Becerra Barcenas*/
+
+/*Definición de fuentes*/
+
+
+@font-face{
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
+
+
+
+/* estilo del título con un Header */
+
+.cuerpo{
+
+  background-color:#aabdf0;
+  margin:0px;
+
+
+}
+.titulo{
+    font-family: Nunito;
+    margin-bottom: -1%;
+
+
+}
+.parrafo_intro{
+  margin-top: 5%;
+
+
+}
+/* Diseño del Menu de navegación */
+.menuN {
+  padding-left: 65%;
+  font-family: Nunito;
+
+
+}
+
+.menuN a:hover{
+
+    background-color: #585858;
+
+}
+.menuN a ul:hover{
+    background-color: #585858;
+}
+.menuN ul li:hover ul{
+    display:flex;
+    position:fixed;
+
+}
+
+
+.botones{
+  float: right;
+  margin-top: -30%;
+  margin-right: 10%;
+}
+
+.map{
+  height: 500px;
+  width: 99%;
+  margin-top:1.5%;
+  margin-left: 1.5%;
+
+}

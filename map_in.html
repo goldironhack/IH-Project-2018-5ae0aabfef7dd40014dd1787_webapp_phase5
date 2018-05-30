@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link href="estilo.css" rel="stylesheet" type="text/css">
+
+<title>Map</title>
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link rel="shortcut icon"  href="https://icon-icons.com/icons2/426/PNG/64/Map_1135px_1195280_42272.png"/>
+</head>
+<body class="cuerpo"  >
+    <header class="head">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="titulo">
+        <div class="navbar-header">
+     <h6 class="navbar-brand" href="#">Live in NY</h6>
+   </div>
+ </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="menuN">
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="map_in.html">Interactive Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="credits.html">Credits</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+</header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
+	<div class="map" id="map"></div>
+
+</div>
+    <div class="col-sm-4">
+      <h2>Criteria search</h2>
+
+      <form>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Crime record</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">District distance</label>
+        </div>
+        <div class="checkbox">
+          <label id="geoshapes"><input type="checkbox" value="">District geoshape</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Building data</label>
+        </div>
+      </form>
+      <a href="map_in.html"><button type="button" class="btn btn-secondary" id="clear">Clear Map </button></a>
+    </div>
+  </div>
+  </div>
+<div class="container">
+  <h2>Results</h2>
+  <p>Those are some results about your search</p>
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu0" id="updateTableButton">Ranking</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu1">Charts</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu2">statistics</a></li>
+
+  </ul>
+
+  <div class="tab-content">
+    <div id="menu0" class="tab-pane fade in active">
+      <h3>RANKING</h3>
+      <table class="table table-hover">
+          <thead class="thead-white">
+
+            <tr>
+              <th> Boroughs </th>
+              <th> Data </th>
+            </tr>
+          </thead>
+          <tbody id="mainTableBody">
+
+          </tbody>
+        </table>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>CHARTS</h3>
+
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>STATISTICS</h3>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="main.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBc9OM6qyVzIRjyD-DkMab66ATIcVPMzwo&callback=initMap">
+</script>
+</body>
+</html>
